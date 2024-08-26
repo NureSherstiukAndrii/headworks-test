@@ -1,0 +1,46 @@
+.tickets {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #2196f3;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  padding: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &-close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+  &-table {
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+
+    & th,
+    & td {
+      font-size: 15px;
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .delete-ticket {
+    @media (max-width: 768px) {
+      padding: 5px;
+      font-size: 15px;
+    }
+  }
+}

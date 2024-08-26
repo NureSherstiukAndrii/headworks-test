@@ -1,0 +1,22 @@
+.form-block {
+  position: relative;
+  margin-bottom: 30px;
+
+  &__input {
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+    border: 0;
+    outline: none;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    font-size: 13px;
+    color: red;
+  }
+}

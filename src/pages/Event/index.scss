@@ -1,0 +1,48 @@
+@import "../../styles/mixins.scss";
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: cornflowerblue;
+  height: 100vh;
+
+  &-name {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+
+    .event-detail {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      span {
+        font-size: 15px;
+
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+
+        @media (min-width: 992px) {
+          font-size: 25px;
+        }
+      }
+
+      .break-words {
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+.update-link {
+  @include btn-theme();
+}

@@ -1,0 +1,24 @@
+.event-form {
+  position: fixed;
+  z-index: 1;
+  background-color: cornflowerblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 600px;
+  }
+
+  &__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+}

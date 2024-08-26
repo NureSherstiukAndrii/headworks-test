@@ -1,0 +1,37 @@
+.create-link {
+  color: black;
+  text-decoration: none;
+  background-color: #318ce7;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.events {
+  display: flex;
+  gap: 40px;
+  margin: 2rem;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+  }
+}

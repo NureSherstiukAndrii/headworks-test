@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto&display=swap");
+@import "./mixins.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+button {
+  @include btn-theme();
+}
+
+.Toastify__toast-body > div:last-child {
+  color: black !important;
+}

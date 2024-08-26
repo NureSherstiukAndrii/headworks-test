@@ -1,0 +1,24 @@
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  padding: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: navajowhite;
+  width: 70%;
+  height: 75%;
+  border-radius: 15px;
+
+  &__close {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+  select {
+    margin-bottom: 30px;
+  }
+}

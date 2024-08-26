@@ -1,0 +1,28 @@
+.event-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: cornflowerblue;
+  padding: 20px;
+  border-radius: 15px;
+  max-height: 300px;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: fit-content;
+  }
+
+  &__name {
+    font-size: 40px;
+  }
+
+  &__details {
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #673ab7;
+    }
+  }
+}
