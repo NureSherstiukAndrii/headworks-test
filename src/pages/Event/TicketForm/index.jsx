@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import FormField from "../../../components/FormField";
 import isRequired from "../../../utils/form-validation/isRequired";
 import isNumber from "../../../utils/form-validation/isNumber";
+import isPositive from "../../../utils/form-validation/isPositive";
 import composeValidators from "../../../utils/form-validation/composeValidators";
 import { toastError, toastSuccess } from "../../../utils/pop-ups/pop-ups";
 import { addTicket } from "../../../store/events/actions";
@@ -35,7 +36,7 @@ const TicketCreateForm = ({ closeForm }) => {
               name="ticketNumber"
               type="text"
               placeholder="Ticket Number"
-              validators={composeValidators(isRequired, isNumber)}
+              validators={composeValidators(isRequired, isNumber, isPositive)}
             />
             <Field name="ticketTitle" component="select" validate={isRequired}>
               <option value="" disabled>
@@ -48,7 +49,7 @@ const TicketCreateForm = ({ closeForm }) => {
               name="ticketPrice"
               type="text"
               placeholder="Ticket Price"
-              validators={composeValidators(isRequired, isNumber)}
+              validators={composeValidators(isRequired, isNumber, isPositive)}
             />
 
             <button type="submit">Add Ticket</button>
